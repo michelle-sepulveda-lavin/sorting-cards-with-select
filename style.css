@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(39, 143, 39);
+}
+
+.cabezera {
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.botones {
+    font-family: 'Sora', sans-serif;
+    background-color: rgb(42, 41, 49);
+    border: none;
+    color: white;
+    padding: 10px;
+}
+input{
+    height: 31px;
+    width: 60px;
+    text-align: center;
+}
+
+.carta{
+    width: 80px;
+    height: 120px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.carta .numero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 45px;
+    text-align: center;
+}
+.trebol::before {
+    content: "\2663";
+    text-align: left;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.trebol::after {
+    content: "\2663";
+    text-align: left;
+    font-size: 30px;
+    transform: rotate(180deg);
+    padding-left: 6px;
+}
+
+.pica::before {
+    content: "\2660";
+    text-align: left;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.pica::after {
+    content: "\2660";
+    text-align: left;
+    font-size: 30px;
+    padding-left: 6px;
+    transform: rotate(180deg);
+}
+.diamantes::before {
+    content: "\2666";
+    text-align: left;
+    font-size: 30px;
+    padding-left: 5px;
+    color: red;
+}
+
+.diamantes::after {
+    content: "\2666";
+    text-align: left;
+    font-size: 30px;
+    padding-left: 6px;
+    color: red;
+    transform: rotate(180deg);
+}
+.corazones::before {
+    content: "\2665";
+    text-align: left;
+    font-size: 30px;
+    padding-left: 5px;
+    color: red;
+}
+
+.corazones::after {
+    content: "\2665";
+    text-align: left;
+    font-size: 30px;
+    padding-left: 6px;
+    color: red;
+    transform: rotate(180deg);
+}
+.cartasGeneradas {
+    display: flex;
+    padding-left: 70px;
+}
+p {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+}
+.paso {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+span {
+    font-size: 13px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    font-family: 'Sora', sans-serif;
+}
